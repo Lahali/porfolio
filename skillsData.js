@@ -1,6 +1,6 @@
 const skills = [
-  { id: 1, name: "HTML", image: "../public/assets/skills/html.png" },
-  { id: 2, name: "CSS", image: "../public/assets/skills/css.png" },
+  { id: 1, name: "HTML", image: "/../public/assets/skills/html.png" },
+  { id: 2, name: "CSS", image: "/../public/assets/skills/css.png" },
   {
     id: 3,
     name: "Javascript",
