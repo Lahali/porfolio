@@ -63,8 +63,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-300"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-5 ease-in duration-300"
+              : "fixed left-[-100%] top-0 p-8 ease-in duration-300"
           }
         >
           <div className="flex items-center justify-end w-full">
@@ -91,7 +91,8 @@ const Navbar = () => {
               <p className="uppercase tracking-widest text-[#BA881D]">
                 let's connect
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              {/* ICONOS */}
+              <div className="flex flex-wrap items-center justify-between my-1  sm:my-4 w-full sm:w-[80%]">
                 <div className="rounded-full p-6 cursor-pointer border border-[#ecf0f3] hover:border-gray-700">
                   <Link
                     href="https://www.linkedin.com/in/halimeh-habib/"
