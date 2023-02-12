@@ -15,6 +15,8 @@ const ProjectItem = () => {
     loadData()
   }, [])
 
+  console.log("datos", projects)
+
   return (
     <>
       {projects.map((item) => (
