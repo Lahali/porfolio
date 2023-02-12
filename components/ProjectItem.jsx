@@ -1,20 +1,9 @@
 import React, { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import db from "../db.json"
+import projects from "../db.js"
 
 const ProjectItem = () => {
-  const data = db.projects
-  const [projects, setProjects] = useState([])
-
-  useEffect(() => {
-    const loadData = async () => {
-      const getData = await data
-      setProjects(getData)
-    }
-    loadData()
-  }, [])
-
   console.log("datos", projects)
 
   return (
