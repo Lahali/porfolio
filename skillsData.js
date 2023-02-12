@@ -1,5 +1,7 @@
+import html from "public/assets/skills/html.png"
+
 const skills = [
-  { id: 1, name: "HTML", image: "/../public/assets/skills/html.png" },
+  { id: 1, name: "HTML", image: html },
   { id: 2, name: "CSS", image: "/../public/assets/skills/css.png" },
   {
     id: 3,

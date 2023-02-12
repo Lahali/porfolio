@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import db from "./db.json"
+import db from "../db.json"
 
 const ProjectItem = () => {
   const data = db.projects
