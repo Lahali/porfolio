@@ -7,22 +7,22 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
-      <div className="flex max-w-[1240px] w-full h-full mx-auto justify-center items-center">
+    <div id="home" className="w-full h-screen text-left">
+      <div className="flex max-w-[1240px] w-full h-full mx-auto justify-start pt-10 p-3 items-center">
         <div>
           <p className="text-sm tracking-widest text-gray-600 uppercase">
             Let's do things
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I'm <span className="text-[#BA881D]">Halimeh</span>
+            Hi, I'm <span className="text-[#BA881D]">Halimeh,</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <h1 className="py-2 text-gray-700">a front-end Developer</h1>
+          {/* <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I'm a front-end developer specializing in building exceptional
             digital experiences. Currently I'm focused on building responsive
             front-end web applications while learning more technologies.
-          </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          </p> */}
+          <div className="flex items-center justify-between max-w-[330px]  py-4">
             <div className="rounded-full p-6 cursor-pointer bg-gray-700 text-white border border-[#ecf0f3] hover:bg-[#ecf0f3] hover:text-gray-700">
               <Link
                 href="https://www.linkedin.com/in/halimeh-habib/"

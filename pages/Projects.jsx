@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <div id="projects" className="w-full pt-8">
-        <div className="px-6 py-16 mx-auto max-w-1240px">
+      <div id="projects" className="w-full h-screen pt-8">
+        <div className="px-6 py-20 mx-auto max-w-1240px">
           <p className="text-xl tracking-widest uppercase text-[#BA881D]">
             PROJECTS
           </p>
