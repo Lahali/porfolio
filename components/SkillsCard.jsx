@@ -8,7 +8,7 @@ const SkillsCard = () => {
       {skills.map((item, index) => (
         <div
           key={index}
-          className="m-4 relative flex items-center justify-center h-auto shadow-md shadow-gray-400 rounded-md p-4 group hover:bg-[#BA881D]"
+          className="m-4 relative flex items-center justify-center h-auto  rounded-md p-4 group hover:bg-[#BA881D]"
         >
           <div className="flex items-center justify-center">
             <div className="m-auto">

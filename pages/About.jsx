@@ -1,12 +1,13 @@
 import React from "react"
 import Image from "next/image"
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div className="items-center w-full p-6 pt-24 md:h-screen ">
+      <div className="items-center w-full p-6 pt-24 md:h-screen">
         <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
           <div className="col-span-2">
             <p className="uppercase text-xl tracking-widest text-[#BA881D]">
@@ -39,6 +40,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
