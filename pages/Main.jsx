@@ -5,11 +5,12 @@ import { AiOutlineMail } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import Footer from "@/components/Footer"
+import Navbar from "@/components/Navbar"
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-left">
-      <div className="flex max-w-[1240px] w-full h-full mx-auto justify-start pt-10 p-4 items-center">
+    <div id="home" className="w-full h-screen text-left ">
+      <div className="flex max-w-[1240px] w-full h-full mx-auto justify-start pt-6 px-4 items-center">
         <div>
           <p className="text-sm tracking-widest text-gray-200 uppercase">
             Let's do things
@@ -46,7 +47,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }
