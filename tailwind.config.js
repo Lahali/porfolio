@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        waves: "url('/public/assets/images/layered-waves-haikei.png')",
+      },
+    },
   },
   plugins: [require("daisyui")],
 }

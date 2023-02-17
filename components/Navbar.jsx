@@ -54,13 +54,12 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-md z-[100] bg-gray-100"
-          : "fixed w-full h-20 z-[100] bg-gray-100"
+          ? "fixed w-full h-20 shadow-md z-[100] bg-gray-700"
+          : "fixed w-full h-20 z-[100] bg-gray-800"
       }
     >
       <div className="flex items-center justify-end w-full h-full px-2 2xl:px-16">
         {/* aquí iría el logo o similar */}
-        {renderThemeChanger()}
         <div>
           <ul className="hidden md:flex">
             {navigation.map((nav) => (
@@ -86,7 +85,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-5 ease-in duration-300"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-gray-800 h-screen p-5 ease-in duration-300"
               : "fixed left-[-100%] top-0 p-8 ease-in duration-300"
           }
         >
