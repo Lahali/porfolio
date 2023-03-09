@@ -6,7 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Footer = () => {
   return (
-    <footer className="sticky bottom-0 flex items-center justify-center p-4 mt-0 footer bg-neutral text-neutral-content">
+    <footer className="sticky bottom-0 flex items-center justify-center p-4 mt-0 bg-black footer lg:bg-neutral text-neutral-content">
       <div className="flex flex-row py-4">
         <Link
           className="mx-2"

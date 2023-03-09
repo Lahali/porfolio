@@ -1,49 +1,49 @@
 "use client"
+import Footer from "@/components/Footer"
 import React from "react"
+import Link from "next/link"
 
+// bg-[#191D24]
 const Main = () => {
   return (
     <div
       id="home"
-      className="w-full overflow-hidden h-screen text-left bg-[#191D24] "
+      className="bg-center bg-black bg-cover w-full h-screen overflow-hidden text-left lg:bg-[url('../public/assets/images/background.png')]"
     >
       <div className="flex max-w-[1240px] w-full h-full mx-auto justify-start pt-6 px-4 items-center">
         <div>
-          <p className="text-sm tracking-widest text-gray-200 uppercase">
+          {/* <p className="text-sm tracking-widest text-gray-400 uppercase">
             Let's do things
-          </p>
+          </p> */}
           <h1 className="py-4 text-gray-300">
             Hi, I'm <span className="text-[#1caaaf]">Halimeh,</span>
           </h1>
           <h1 className="py-2 text-[#daf7f3]">a front-end Developer</h1>
-          {/* <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I'm a front-end developer specializing in building exceptional
-            digital experiences. Currently I'm focused on building responsive
-            front-end web applications while learning more technologies.
-          </p> */}
-          {/* <div className="flex items-center justify-between max-w-[330px]  py-4">
-            <div className="p-6 text-white bg-black border border-black rounded-full cursor-pointer hover:bg-gray-300 hover:text-gray-700">
-              <Link
-                href="https://www.linkedin.com/in/halimeh-habib/"
-                target="_blank"
-              >
-                <FaLinkedinIn size={25} />
-              </Link>
-            </div>
-            <div className="rounded-full p-6 cursor-pointer  bg-gray-700 border border-[#ecf0f3] text-white  hover:bg-[#ecf0f3] hover:text-gray-700">
-              <Link href="https://github.com/Lahali" target="_blank">
-                <FaGithub size={25} />
-              </Link>
-            </div>
-            <div className="rounded-full p-6 cursor-pointer  bg-gray-700 border border-[#ecf0f3]  text-white hover:bg-[#ecf0f3] hover:text-gray-700">
-              <AiOutlineMail size={25} />
-            </div>
-            <div className="rounded-full p-6 cursor-pointer  bg-gray-700 border border-[#ecf0f3] text-white  hover:bg-[#ecf0f3] hover:text-gray-700">
-              <BsFillPersonLinesFill size={25} />
-            </div>
-          </div> */}
+          <div className="py-5 text-gray-500">
+            <Link href="/About">
+              <h2 className="transition-transform duration-300 ease-in-out hover:translate-x-8 hover:text-gray-300">
+                A bit about me
+              </h2>
+            </Link>
+            <Link href="/Skills">
+              <h2 className="transition-transform duration-300 ease-in-out hover:translate-x-8 hover:text-gray-300">
+                My skills
+              </h2>
+            </Link>
+            <Link href="/Projects">
+              <h2 className="transition-transform duration-300 ease-in-out hover:translate-x-8 hover:text-gray-300">
+                Some of my work
+              </h2>
+            </Link>
+            <Link href="/Contact">
+              <h2 className="transition-transform duration-300 ease-in-out hover:translate-x-8 hover:text-gray-300">
+                Let's get in touch!
+              </h2>
+            </Link>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
