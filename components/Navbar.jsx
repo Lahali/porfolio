@@ -51,7 +51,7 @@ const Navbar = () => {
           </ul>
 
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu size={25} className="text-gray-300" />
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-gray-800 h-screen p-5 ease-in duration-300"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-black h-screen p-5 ease-in duration-300"
               : "fixed left-[-100%] top-0 p-8 ease-in duration-300"
           }
         >
@@ -72,46 +72,50 @@ const Navbar = () => {
             {/* ESPACIO PARA LOGO */}
             <div
               onClick={handleNav}
-              className="border border-[#ecf0f3] hover:rounded-full  hover:border-gray-700 p-3 cursor-pointer"
+              className="p-3 cursor-pointer hover:rounded-full hover:border-gray-700"
             >
-              <AiOutlineClose />
+              <AiOutlineClose size={20} className="hover:text-gray-500" />
             </div>
           </div>
-          <div className="border-b border-gray-300 my4">
-            <p className="w-[85%] md:w-[90%] py-4">Let's do things together</p>
+          <div className="border-b border-gray-500 my4">
+            <p className="w-[85%] md:w-[90%] py-4 text-gray-300 text-lg">
+              Let's do things together
+            </p>
           </div>
           <div className="flex flex-col py-4">
             <ul className="uppercase">
               {navigation.map((nav) => (
                 <Link key={nav.id} href={nav.path}>
-                  <li className="py-4 text-sm hover:border-b ">{nav.label}</li>
+                  <li className="py-4 text-base border-gray-500 hover:border-b ">
+                    {nav.label}
+                  </li>
                 </Link>
               ))}
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#BA881D]">
+              <p className="uppercase tracking-widest text-[#1caaaf]">
                 let's connect
               </p>
               {/* ICONOS */}
               <div className="flex flex-wrap items-center justify-between my-1  sm:my-4 w-full sm:w-[80%]">
-                <div className="rounded-full p-6 cursor-pointer border border-[#ecf0f3] hover:border-gray-700">
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
                   <Link
                     href="https://www.linkedin.com/in/halimeh-habib/"
                     target="_blank"
                   >
-                    <FaLinkedinIn size={25} />
+                    <FaLinkedinIn size={25} className="text-gray-300" />
                   </Link>
                 </div>
-                <div className="rounded-full p-6 cursor-pointer border border-[#ecf0f3] hover:border-gray-700">
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
                   <Link href="https://github.com/Lahali" target="_blank">
-                    <FaGithub size={25} />
+                    <FaGithub size={25} className="text-gray-300" />
                   </Link>
                 </div>
-                <div className="rounded-full p-6 cursor-pointer border border-[#ecf0f3] hover:border-gray-700">
-                  <AiOutlineMail size={25} />
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
+                  <AiOutlineMail size={25} className="text-gray-300" />
                 </div>
-                <div className="rounded-full p-6 cursor-pointer border border-[#ecf0f3] hover:border-gray-700">
-                  <BsFillPersonLinesFill size={25} />
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
+                  <BsFillPersonLinesFill size={25} className="text-gray-300" />
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@ import React from "react"
 import Image from "next/image"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import rocket from "../public/assets/images/cohete-amarillo.png"
 
 const About = () => {
   return (
@@ -27,16 +28,15 @@ const About = () => {
               ullam perspiciatis. Expedita dolores nulla quis doloribus
               consectetur repellendus quo cum harum dicta.
             </p>
-            {/* <p className="py-2 text-gray-400 underline cursor-pointer">
-              Check out some things I did
-            </p> */}
           </div>
-          <div className="flex items-center justify-center w-full h-auto p-4 m-auto">
-            <img
-              className="duration-100 ease-in hover:scale-105"
-              src="https://placeimg.com/470/480/tech"
-              alt="/"
-            />
+          <div className="flex flex-col items-center justify-center w-full h-auto p-4 m-auto">
+            <Image src={rocket} alt="rocket-tech" />
+            <a
+              href="https://storyset.com/business"
+              className="text-xs text-gray-500"
+            >
+              Business illustrations by Storyset
+            </a>
           </div>
         </div>
       </div>

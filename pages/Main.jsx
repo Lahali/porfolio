@@ -43,7 +43,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer background={"bg-neutral"} />
     </div>
   )
 }
