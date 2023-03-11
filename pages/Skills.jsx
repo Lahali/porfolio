@@ -7,7 +7,10 @@ const Skills = () => {
   return (
     <>
       <Navbar />
-      <div id="skills" className="w-full h-screen p-6 pt-24 bg-black">
+      <div
+        id="skills"
+        className="w-full h-full p-6 pt-24 bg-black md:h-screen lg:h-screen"
+      >
         <div className="maw-w-[1240px] mx-auto flex flex-col justify-center h-full">
           <p className="text-xl tracking-widest uppercase text-[#1caaaf]">
             skills
