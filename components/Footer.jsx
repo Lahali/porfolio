@@ -7,7 +7,9 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 const Footer = ({ background }) => {
   return (
     <footer
-      className={` sticky bottom-0 flex items-center justify-center p-4 mt-0 bg-black footer lg:${background} text-neutral-content`}
+      className={` sticky bottom-0 flex items-center justify-center p-4 mt-0 footer ${
+        background ? background : "bg-black"
+      } text-neutral-content`}
     >
       <div className="flex flex-row py-4 text-gray-500">
         <Link

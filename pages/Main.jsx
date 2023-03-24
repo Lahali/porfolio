@@ -4,7 +4,9 @@ import React from "react"
 import Link from "next/link"
 
 // bg-[#191D24]
+
 const Main = () => {
+  const background = "bg-neutral"
   return (
     <div
       id="home"
@@ -12,9 +14,6 @@ const Main = () => {
     >
       <div className="flex max-w-[1240px] w-full h-full mx-auto justify-start pt-6 px-4 items-center">
         <div>
-          {/* <p className="text-sm tracking-widest text-gray-400 uppercase">
-            Let's do things
-          </p> */}
           <h1 className="py-4 text-gray-300">
             Hi, I'm <span className="text-[#1caaaf]">Halimeh,</span>
           </h1>
@@ -43,7 +42,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Footer background={"bg-neutral"} />
+      <Footer background={background} />
     </div>
   )
 }

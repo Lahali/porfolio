@@ -1,10 +1,21 @@
-import React from "react"
+import React, { useState } from "react"
+import { useForm } from "react-hook-form"
 import Image from "next/image"
 import contact from "../public/assets/images/contact-yellow.svg"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+  const customSubmit = (data) => {
+    console.log(data)
+  }
+
   return (
     <>
       <Navbar />
@@ -46,14 +57,33 @@ const Contact = () => {
 
             <div className="w-full h-auto col-span-3 rounded-sm lg:p-4">
               <div className="p-4">
-                <form>
+                <form
+                  className="text-black"
+                  onSubmit={handleSubmit(customSubmit)}
+                >
                   <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                     <div className="flex flex-col">
                       <label className="py-2 text-sm uppercase">Name</label>
                       <input
-                        className="flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                        className={
+                          errors.name
+                            ? "flex p-3 bg-rose-200 border-2 border-rose-500 rounded-sm"
+                            : "flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                        }
                         type="text"
+                        placeholder="Name"
+                        {...register("name", {
+                          required: {
+                            value: true,
+                            message: "This field is required",
+                          },
+                        })}
                       />
+                      {errors.name && (
+                        <small className="mt-1 text-rose-400">
+                          {errors.name.message}
+                        </small>
+                      )}
                     </div>
                     <div className="flex flex-col">
                       <label className="py-2 text-sm uppercase">
@@ -62,31 +92,87 @@ const Contact = () => {
                       <input
                         className="flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
                         type="text"
+                        placeholder="Phone number"
+                        name="phone"
+                        {...register("phone")}
                       />
                     </div>
                   </div>
                   <div className="flex flex-col py-2">
                     <label className="py-2 text-sm uppercase">Email</label>
                     <input
-                      className="flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                      className={
+                        errors.email
+                          ? "flex p-3 bg-rose-200 border-2 border-rose-500 rounded-sm"
+                          : "flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                      }
                       type="email"
+                      placeholder="email"
+                      name="email"
+                      {...register("email", {
+                        required: {
+                          value: true,
+                          message: "This field is required",
+                        },
+                      })}
                     />
+                    {errors.email && (
+                      <small className="mt-1 text-rose-400">
+                        {errors.email.message}
+                      </small>
+                    )}
                   </div>
                   <div className="flex flex-col py-2">
                     <label className="py-2 text-sm uppercase">Subject</label>
                     <input
-                      className="flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                      className={
+                        errors.subject
+                          ? "flex p-3 bg-rose-200 border-2 border-rose-500 rounded-sm"
+                          : "flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                      }
                       type="text"
+                      placeholder="Subject"
+                      name="subject"
+                      {...register("subject", {
+                        required: {
+                          value: true,
+                          message: "This field is required",
+                        },
+                      })}
                     />
+                    {errors.subject && (
+                      <small className="mt-1 text-rose-400">
+                        {errors.subject.message}
+                      </small>
+                    )}
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="py-2 text-sm uppercase">message</label>
+                    <label className="py-2 text-sm uppercase">Message</label>
                     <textarea
-                      className="flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                      className={
+                        errors.message
+                          ? "flex p-3 bg-rose-200 border-2 border-rose-500 rounded-sm"
+                          : "flex p-3 bg-gray-200 border-2 border-gray-500 rounded-sm"
+                      }
                       rows="10"
+                      placeholder="Message"
+                      {...register("message", {
+                        required: {
+                          value: true,
+                          message: "This field is required",
+                        },
+                      })}
                     />
+                    {errors.message && (
+                      <small className="mt-1 text-rose-400">
+                        {errors.message.message}
+                      </small>
+                    )}
                   </div>
-                  <button className="w-full p-4 mt-4 text-gray-100 shadow-none">
+                  <button
+                    type="submit"
+                    className="w-full p-4 mt-4 text-gray-100 shadow-none bg-[#1caaaf]"
+                  >
                     send message
                   </button>
                 </form>

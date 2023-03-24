@@ -15,18 +15,29 @@ const About = () => {
               About
             </p>
             <h2 className="py-4 text-gray-300">Who I Am</h2>
-            <p className="py-2 text-gray-400"> Lorem ipsum </p>
+
             <p className="py-2 text-gray-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              sequi mollitia sit recusandae porro atque, eveniet fugiat
-              perferendis ex. Est eaque eius ut doloribus ipsa nemo tenetur
-              asperiores quos perferendis?
+              Hi! My name is Halimeh and I'm a web developer specializing in
+              React. I've been living in Barcelona since 2013 and, like many
+              people, I found in the pandemic an opportunity to reinvent myself
+              and start studying programming.
             </p>
             <p className="py-2 text-gray-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              repudiandae obcaecati ut veniam voluptates eligendi harum eos,
-              ullam perspiciatis. Expedita dolores nulla quis doloribus
-              consectetur repellendus quo cum harum dicta.
+              In 2021, I decided to take a big leap and specialize in React
+              through an intensive bootcamp. Since then, I've been working on
+              various projects where I've applied my knowledge of React,
+              TypeScript, JavaScript, Styled Components, GitHub, Figma, Tailwind
+              and Next.js.
+            </p>
+            {/* <p className="py-2 text-gray-400">
+              I'm passionate about creating high-quality web applications with
+              excellent user experience. I'm always learning and keeping
+              up-to-date with the latest trends and tools in the market.
+            </p> */}
+            <p className="py-2 text-gray-400">
+              {" "}
+              If you're looking for someone with my skills and experience, don't
+              hesitate to get in touch with me!
             </p>
           </div>
           <div className="flex flex-col items-center justify-center w-full h-auto p-4 m-auto">
