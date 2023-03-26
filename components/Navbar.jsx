@@ -2,7 +2,6 @@ import Link from "next/link"
 import React, { useEffect, useState } from "react"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -97,25 +96,22 @@ const Navbar = () => {
                 let's connect
               </p>
               {/* ICONOS */}
-              <div className="flex flex-wrap items-center justify-between my-1  sm:my-4 w-full sm:w-[80%]">
-                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
+              <div className="flex flex-wrap text-gray-500 items-center justify-between my-1  sm:my-4 w-full sm:w-[80%]">
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:text-gray-300">
                   <Link
                     href="https://www.linkedin.com/in/halimeh-habib/"
                     target="_blank"
                   >
-                    <FaLinkedinIn size={25} className="text-gray-300" />
+                    <FaLinkedinIn size={25} />
                   </Link>
                 </div>
-                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:text-gray-300">
                   <Link href="https://github.com/Lahali" target="_blank">
-                    <FaGithub size={25} className="text-gray-300" />
+                    <FaGithub size={25} />
                   </Link>
                 </div>
-                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
-                  <AiOutlineMail size={25} className="text-gray-300" />
-                </div>
-                <div className="p-6 border border-black rounded-full cursor-pointer hover:border-gray-600">
-                  <BsFillPersonLinesFill size={25} className="text-gray-300" />
+                <div className="p-6 border border-black rounded-full cursor-pointer hover:text-gray-300">
+                  <AiOutlineMail size={25} />
                 </div>
               </div>
             </div>

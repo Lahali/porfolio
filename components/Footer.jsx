@@ -2,7 +2,6 @@ import React from "react"
 import Link from "next/link"
 import { AiOutlineMail } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Footer = ({ background }) => {
   return (
@@ -26,14 +25,12 @@ const Footer = ({ background }) => {
         >
           <FaGithub size={30} />
         </Link>
-        <AiOutlineMail
+        <Link
           className="mx-3 cursor-pointer hover:text-gray-300"
-          size={30}
-        />
-        <BsFillPersonLinesFill
-          className="mx-3 cursor-pointer hover:text-gray-300"
-          size={30}
-        />
+          href="mailto:matamua82@gmail.com"
+        >
+          <AiOutlineMail size={30} />
+        </Link>
       </div>
     </footer>
   )

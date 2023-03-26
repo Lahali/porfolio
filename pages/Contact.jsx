@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useForm } from "react-hook-form"
 import Image from "next/image"
 import contact from "../public/assets/images/contact-yellow.svg"
@@ -169,6 +169,13 @@ const Contact = () => {
                       </small>
                     )}
                   </div>
+                  {/* <a
+                    type="submit"
+                    className="w-full p-4 mt-4 text-gray-100 shadow-none bg-[#1caaaf]"
+                    href="mailto:matamua82@gmail.com"
+                  >
+                    send message
+                  </a> */}
                   <button
                     type="submit"
                     className="w-full p-4 mt-4 text-gray-100 shadow-none bg-[#1caaaf]"
