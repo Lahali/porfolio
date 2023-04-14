@@ -1,4 +1,4 @@
-import { rainbow, dropon, budget } from "./public/assets/images"
+import { rainbow, dropon, budget, films } from "./public/assets/images"
 
 const projects = [
   {
@@ -11,6 +11,15 @@ const projects = [
   },
   {
     id: 2,
+    title: "Where Was Filmed",
+    description: "An app where the user can see and add movie locations",
+    technologies: "React, Tailwind, Leaflet and Firebase",
+    link: "https://movielocations.vercel.app/",
+    img: films,
+  },
+
+  {
+    id: 3,
     title: "Drop Zone",
     description: "A drop-on app",
     technologies: "ES6, CSS and HTML",
@@ -18,7 +27,7 @@ const projects = [
     img: dropon,
   },
   {
-    id: 3,
+    id: 4,
     title: "Rainbow to-do",
     description: "A To-Do app that creates a rainbow.",
     technologies: "React, Styled Components",
