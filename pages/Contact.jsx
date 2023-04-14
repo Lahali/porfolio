@@ -59,7 +59,8 @@ const Contact = () => {
               <div className="p-4">
                 <form
                   className="text-black"
-                  onSubmit={handleSubmit(customSubmit)}
+                  action="https://formsubmit.co/matamua82@gmail.com"
+                  method="POST"
                 >
                   <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                     <div className="flex flex-col">
