@@ -36,3 +36,8 @@ html {
     @apply rounded-sm uppercase bg-[#1caaaf] text-white;
   }
 }
+
+.outline-title {
+  text-shadow: 1px 1px 0 #1caaaf, -1px -1px 0 #1caaaf, 1px -1px 0 #1caaaf,
+    -1px 1px 0 #1caaaf, 1px 1px 0 #1caaaf;
+}

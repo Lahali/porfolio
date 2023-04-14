@@ -12,5 +12,15 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-stroke": {
+          "-webkit-text-stroke": "2px #1caaaf",
+          "-webkit-text-fill-color": "#000000",
+        },
+      })
+    },
+  ],
 }

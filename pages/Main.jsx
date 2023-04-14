@@ -17,7 +17,9 @@ const Main = () => {
           <h1 className="py-4 text-gray-300">
             Hi, I'm <span className="text-[#1caaaf]">Halimeh,</span>
           </h1>
-          <h1 className="py-2 text-[#daf7f3]">a front-end Developer</h1>
+          <h1 className="py-2 text-black outline-title">
+            a front-end Developer
+          </h1>
           <div className="py-5 text-gray-500">
             <Link href="/About">
               <h2 className="transition-transform duration-300 ease-in-out hover:translate-x-8 hover:text-gray-300">
@@ -48,3 +50,4 @@ const Main = () => {
 }
 
 export default Main
+/* a frontend developer */
